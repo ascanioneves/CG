@@ -64,7 +64,7 @@ int main(int argc, char** argv)
 
 void init()
 {
-    glClearColor(0.0, 0.05, 0.10, 1.0); // cor do background
+    glClearColor(0.0, 0.05, 0.10, 1.0); 
     glOrtho (-50, 50, -50, 50, -50 , 50);
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_CULL_FACE);
@@ -92,37 +92,37 @@ void display()
 
 void displayCubo()
 {
-    glColor3f(BLUE); /* frente */
+    glColor3f(BLUE); 
     glDrawElements(GL_QUADS, 4, GL_UNSIGNED_BYTE, frenteIndices);
 
-    glColor3f(YELLOW); /* esquerda */
+    glColor3f(YELLOW); 
     glDrawElements(GL_QUADS, 4, GL_UNSIGNED_BYTE, esquerdaIndices);
 
-    glColor3f(RED); /* tras */
+    glColor3f(RED); 
     glDrawElements(GL_QUADS, 4, GL_UNSIGNED_BYTE, trasIndices);
 
-    glColor3f(GREEN); /* direita */
+    glColor3f(GREEN); 
     glDrawElements(GL_QUADS, 4, GL_UNSIGNED_BYTE, direitaIndices);
 
-    glColor3f(BLUE); /* topo */
+    glColor3f(BLUE); 
     glDrawElements(GL_QUADS, 4, GL_UNSIGNED_BYTE, topoIndices);
 
-    glColor3f(BLUE); /* fundo */
+    glColor3f(BLUE); 
     glDrawElements(GL_QUADS, 4, GL_UNSIGNED_BYTE, fundoIndices);
 }
 
 void displayTelhado()
 {
-    glColor3f(BROWN); /* frente */
+    glColor3f(BROWN); 
     glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_BYTE, telhadoFrente);
 
-    glColor3f(BROWN); /* esquerda */
+    glColor3f(BROWN);
     glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_BYTE, telhadoEsquerda);
 
-    glColor3f(BROWN); /* direita */
+    glColor3f(BROWN); 
     glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_BYTE, telhadoDireita);
 
-    glColor3f(BROWN); /* tras */
+    glColor3f(BROWN); 
     glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_BYTE, telhadoTras);
 }
 
